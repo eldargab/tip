@@ -331,12 +331,7 @@ Tip.prototype.hide = function(ms){
 
   // hide
   this.el.addClass('tip-hide');
-  if (this._effect) {
-    setTimeout(this.remove.bind(this), 300);
-  } else {
-    self.remove();
-  }
-
+  setTimeout(this.remove.bind(this), 300);
   return this;
 };
 
