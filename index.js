@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -149,7 +148,6 @@ Tip.prototype.position = function(pos){
 
 Tip.prototype.show = function(el){
   // show it
-  this.target = o(el);
   this.el.appendTo('body');
   this.el.addClass('tip-' + this._position);
   this.el.removeClass('tip-hide');
